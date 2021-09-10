@@ -5,10 +5,13 @@ const listJSON = require('../collections/list.json');
 const collectionSchema = Joi.object({
     name: Joi.string().required(),
     symbol: Joi.string().required(),
+    maxSupply: Joi.number().required(),
     address: Joi.string()
     .pattern(new RegExp('^0x[a-fA-F0-9]{40}$')).required(),
     contractURI: Joi.string().uri(),
     website: Joi.string().uri(),
+    baseURI: Joi.string().uri(),
+   
 })
 
 
