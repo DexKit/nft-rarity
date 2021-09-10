@@ -1,0 +1,19 @@
+{
+  "name": "nft-rarity",
+  "version": "0.0.1",
+  "repository": "https://github.com/DexKit/nft-rarity.git",
+  "author": "JoaoCampos89 <info@dexkit.com>",
+  "license": "MIT",
+  "scripts": {
+    "validate": "node scripts/validate.js"
+  },
+  "pre-commit": [
+  "validate"
+  ],
+  "dependencies": {
+    "joi": "^17.4.2"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
+  }
+}
